@@ -11,13 +11,13 @@ st.set_page_config(page_title="Sedai Flex Dashboard", layout="wide")
 # Title
 st.title("📊 Sedai Flex Dashboard")
 
-# Logo with fallback
-logo_path = "assets/flex_logo.png"
+# Logo from repo root
+logo_path = "flex_logo.png"
 if os.path.exists(logo_path):
     image = Image.open(logo_path)
     st.image(image, use_container_width=True)
 else:
-    st.warning("⚠️ Logo not found at 'assets/flex_logo.png'. Please check the path or upload the image.")
+    st.warning("⚠️ Logo not found at 'flex_logo.png'. Please upload it to the repo root.")
 
 # Sample data
 df = pd.DataFrame({
@@ -37,4 +37,3 @@ st.dataframe(df, use_container_width=True)
 # Footer
 st.markdown("---")
 st.caption("© 2025 Sedai Flex Dashboard | Powered by Streamlit")
-
