@@ -36,4 +36,4 @@ st.dataframe(df, use_container_width=True)
 
 # Footer
 st.markdown("---")
-st.caption("© 2025 Sedai Flex Dashboard | Powered by Streamlit")
+st.caption("© 2025 Sedai Flex Dashboard |  FinOps")
