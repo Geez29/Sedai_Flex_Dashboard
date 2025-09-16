@@ -5,13 +5,13 @@ from PIL import Image
 import os
 
 # Set page config
-st.set_page_config(page_title="", layout="wide")
+st.set_page_config(page_title="Sedai Flex Dashboard", layout="wide")
 
 # Logo from repo root, resized and centered
 logo_path = "flex_logo.png"
 if os.path.exists(logo_path):
     image = Image.open(logo_path)
-    st.image(image, width=200, caption="Sedai Flex Logo")
+    st.image(image, width=200, caption="")
 else:
     st.warning("⚠️ Logo not found at 'flex_logo.png'. Please upload it to the repo root.")
 
