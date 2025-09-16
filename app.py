@@ -5,7 +5,7 @@ from PIL import Image
 import os
 
 # Set page config
-st.set_page_config(page_title="Sedai Flex Dashboard", layout="wide")
+st.set_page_config(page_title="", layout="wide")
 
 # Logo from repo root, resized and centered
 logo_path = "flex_logo.png"
