@@ -8,16 +8,16 @@ import os
 # Set page config
 st.set_page_config(page_title="Sedai Flex Dashboard", layout="wide")
 
-# Title
-st.title("📊 Sedai Flex Dashboard")
-
-# Logo from repo root
+# Logo from repo root, resized and centered
 logo_path = "flex_logo.png"
 if os.path.exists(logo_path):
     image = Image.open(logo_path)
-    st.image(image, use_container_width=True)
+    st.image(image, width=200)  # Resize to smaller width
 else:
     st.warning("⚠️ Logo not found at 'flex_logo.png'. Please upload it to the repo root.")
+
+# Title
+st.markdown("<h1 style='text-align: center;'>📊 Sedai Flex Dashboard</h1>", unsafe_allow_html=True)
 
 # Sample data
 df = pd.DataFrame({
